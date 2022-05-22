@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegando fontes especificas, que não tem no Google fonts </title>
+    <style>
+        @font-face {
+            font-family: love; /* Aqui vc coloca o nome em que essa fonte ficará 'salva', para quando vc for colocar ela no seletor do h1 no font-family */
+
+            src: url(fontes/love\ larry.ttf) format('truetype'), url(fontes/Halloween\ .ttf) format('truetype');
+        } /*No url colocamos o local da fonte e o nome do arquivo dela, no format colocamos a sigla para cada tipo de fonte que está no comentario abaixo \/, para .TTF = (truetype),  para .OTF = (opentype)
+            Nesse caso do segundo url, eu coloquei outra fonte, mas era pra ser a msm mudando apenas o formato de .ttf para .otf */
+    
+        body
+            /* Para colocarmos uma fonte externa, usamos o @font-face, o vd ja cria a font family e o url */
+           
+           
+              
+              
+
+                /* Tipos de format() 
+
+                - Opentype (OTF)  >>>  MAIS USADO   <<<
+                - Truetype (TTF)  >>>  MAIS USADO  <<<
+                -embedded-oppentype
+                -truetype-aat (apple advanced typography)
+                - svg
+                */
+            h1{
+                
+                font-family: love;
+                font-weight: normal;
+
+            }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Fontes
+    </h1>
+    <p>As vezes algum cliente quer uma fonte específica que apenas ele tenha, para uma palavra se tornar mais original, então nao podemos usar o 
+        google fonts nesse caso. Existe varios sites para pegar fontes externas, mas nesse exemplo usaremos o DaFonte, mas o cliente ja pode dar um arquivo de Fonte 
+        .TTF OU .OTF 
+        Tem navegadores que funcionam melhores com TTF outros com OTF, mas podemos colocar os dois, nesse caso eu só consegui baixar font com TTF, 
+        então coloquei 2 fontes diferentes apenas como exemplo, mas o certo é colocar 2 fontes igual, mas de formatos diferentes (.TTF, e .OTF)
+    </p>
+</body>
+</html>

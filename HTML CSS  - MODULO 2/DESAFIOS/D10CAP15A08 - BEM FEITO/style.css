@@ -1,0 +1,194 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hind+Siliguri&family=Lobster&display=swap');
+
+@import url(fontes/idroid.otf);
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf) format('opentype');
+
+
+}
+
+* {  /* Isso é uma lei universal, ou seja, é uma regra para TODOS os seletores, tudo oq estiver aqui valerá para todos os seletores  */ 
+     margin: 0px;
+    padding: 0px;  
+}
+
+:root{               /* A pseudoclasse root é a raiz da arvore do documento, nela tudo que definirmos aqui, vai servir para o documento  INTEIRO */ 
+    --cor0: #0FF2F2;
+    --cor1: #05DBF2;
+    --cor2: #0367A6;
+    --cor3: #023859;
+    --cor4: #011826;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    
+
+}
+
+body{
+    background-image: linear-gradient(-45deg,#05DBF2, white 15%, #0367A6, white);
+
+}
+
+header {
+        background-image: linear-gradient(-45deg, #011826,#023859, #011826);
+        color: white;
+        width: auto;
+        min-height: 100px;
+        padding-top: 50px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61); 
+        
+}
+ header > h1 {
+     font: bolder 3em 'android', serif;
+     padding: 10px;
+     text-align: center;
+     text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.534); 
+ }
+ header > p {
+     padding: 15px;
+     text-align: center;
+     font-weight: bold;
+ }
+nav {
+    padding: 20px;
+}
+
+ nav > a {
+     text-decoration: none;
+     color: white;
+     padding: 15px;
+     font-weight: bold;
+     border-radius: 10px;
+    transition-duration: .7s;
+ }
+nav > a:hover{
+    background-color: var(--cor4);
+    color:var(--cor2)
+}
+
+ main {
+     background-color: white;
+     font: var(--fonte-padrao);
+     margin-bottom: 25px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     padding: 10px;
+
+     min-width: 280px;
+     max-width: 1000px;
+     margin: auto;
+     
+     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61); 
+ }
+ main img {
+     width: 100%;
+     border-radius: 10px;
+ }
+ main img.pequena{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+ }
+ a.external::after{  /* "Todo link que conter a class 'external' usar o pseudo element e coolocar o 'content: [código da chave de links externos]' */
+    content: '\1F517';
+ }
+
+main  h2 {
+    font-family: 'Lobster', cursive;
+    color: var(--cor2);
+    padding: 10px;
+    font-size: 2em;
+    text-indent: 40px;
+ }
+ main  p {
+     text-align: justify;
+     text-indent: 25px;
+     padding: 10px;
+     line-height: 2em; /* altura da linha, serve para facilitar a leitura e se achar entre as linhas */ 
+ }
+main a {
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 8px;  /* para dar uma separada do resto das palavras dos paragrafos */
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--cor4);
+}
+main a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    background-color: var(--cor0);
+}
+#TitleLista{
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;  /* margem negativa, ou seja ao inves do bloco afastar, ela irá "entrar" dentro de outro bloco, foi como eu use agora, coloquei o bloco h2 dentro do aside, deixando ele
+    como se fosse um título do aside  */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside > ul {   
+    list-style: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0'; /* código do emoji do check, sempre colocar uma barra intertida antes do código para ver se pega */
+                    /*     '\00A0'  significa colocar um espaço em CSS */ 
+}
+
+aside {
+    text-align: justify;
+    background-color: var(--cor0);
+    border-radius: 10px;
+    margin: 25px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.61); 
+}
+aside > h2 {
+    font-size: 2em;
+    text-align: center;
+}
+aside > p {
+    text-indent: 35px;
+    padding: 15px;
+}
+footer {
+    background-color: var(--cor4);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.PL{  /* primeira letra */ 
+    font-size: 3em;
+}
+strong {
+    color: var(--cor3);
+    font-weight: bolder;
+
+    /* CONFIGURAÇÕES PARA DEIXA O VÍDEO INCOPORADO DO YOUTUBE COBRINDO A TELA INTEIRA E RESPONSIVO :  */
+
+}
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -10px 20px -10px;
+    padding: 20px;
+    padding-bottom: 55.5%; /* essa porcentagem consegue retirar a barra preta que cria no vídeo, quando colocamos o vídeo em uma div */ 
+    position: relative;
+
+
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%; /* Quando usamos alguma caixa com posição absoluta, podemos usar o 'left' e o 'top', ele irão ajustar a em relação ao angulo superior esquerdo da div,
+    tanto a distancia para a esquerda tanto para o topo. */            
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}

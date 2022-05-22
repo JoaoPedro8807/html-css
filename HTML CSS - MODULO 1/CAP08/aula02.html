@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="CSS LOGO FULL.png" type="image/x-icon">
+    <title>Formatação de textos</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        mark {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+ <h1>Principais formatações de textos</h1>
+ <h2>Negrito / Destaque </h2>
+ <p>nessa frase temos um <b>Termo em negrito</b> usando a tag b (não semântica) </p> <!-- Ou  seja, 
+apenas o formato é negrito (não semÇantica), -->
+<p>Nesta frase, tenho um <strong>Termo em destaque</strong> usando a tag strong É semântico</p>
+<!-- Visualmente as duas estão uguais, mas no <b> ela só da sentido de forma, já no strong (semântico) 
+    ele da a forma e um SENTIDO  -->
+<h2>Itálico / Ênfase </h2>
+<p>Nesta frase, temos um <i>Termo em itálico</i> usando a tag I (não semântica)</p>  
+<!-- Dica: Para envelopar uma linha, ou uma 
+parte do código para colocar dentro de uma tag ou uma função. Priemiro selecione a parte que deseja
+inteira com o cursor do mouse, dpeois aperta CTRL + SHIFT + P, depois digite na caixa ali em cima: 'Abb' (ele já vai
+ser o primeiro pq é oq mais uso) e selecione o 'Wrap white abbrevietion', logo depois digite a tag ou a funçao em que vc quer jogar o texto
+envelopado dentro. -->
+<p><b>Só testando o abbreviation de forma mais rápida</b> :), desta vez foi com a tag b, para deixar
+em negrito! </p>
+<p>Nesta frase, temos um <EM>Termo em ênfase usando a tag EM</EM> (semântica)</p>
+<!-- Aqui é a msm coisa, visualmente os dois são iguais, mas o em (semântica), muda a forma e o sentido 
+-->
+<h2>Texto marcado</h2>
+<p>Podemos criar também um <mark>Texto marcado</mark> usando a tag MARK</p> <!-- A tag mark, é como se fosse 
+um marca texto (de caderno msm)-->
+<!-- É possivel mudar a cor do mark, ou de qualquer outra tag, usando o  style dentro da propia tag:
+-->
+<p>criando um mark com <mark style="background-color: brown;">cor diferente</mark></p>
+<!-- Percebe que o style vai mudar sómente a cor do MARK usado nessa linha, o proximo MARK que vc usar
+será amarelo normalmente -->
+<!-- Se deseja que todos os MARK'S sejam de uma cor diferente de amarelo, basta cirar uma tag Style no HEAD
+e defenir o mark com a cor que vc quer, basta ver a HEAD desse msm código -->
+<p>Testa para provar que o mark ficou<mark> em definitivo de uma cor só</mark>, não importa quantas vezes o repita</p>
+<p><mark>Teste 2</mark> </p>
+<h2>Texto grande e pequeno</h2>
+<p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo</p>
+<!-- a tag BIG é obsoleta, ou seja, já não está mais em uso, usar somente em URGENCIAS-->
+<!-- Para realmente aumentar o um texto do jeito certo é apenas no CSS, pois é forma, HTML é focado no
+sentido -->
+<h2>Texto deletado </h2>
+<p>Podemos marcar <del>um texto como excluido</del>, para indicar que ele deve ser lido, mas não considerado(lembrando que del é uma tag
+    semântica, ou sejam, possui sentido)</p>          
+
+<h2>Texto inserido</h2>
+<p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois (lembrando que
+    ims é uma tag semântica, ou seja, possui sentido) </p>
+
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisa do tipo x<sup>20</sup>+3</p>
+
+<h2>Texto subscrito </h2>
+<p>para inserir coisas do tipo H<sub>2</sub>O</p>
+
+
+
+</body>
+</html>

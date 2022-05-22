@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="CSS LOGO FULL.png" type="image/x-icon">
+    <title>Outras formatações</title>
+    <style>
+        body {
+            background-color: rgb(132, 163, 58);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Outras formatações </h1>
+    <h2>Código-fonte/ pré formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em 
+        linguagem javascript </p> <!-- A tag code serve para deixar as letras com espaçamentos iguais 
+        que chamamos de FONTE MONOESPAÇADA, muito ultilizada para quando for escrever algum código
+     fica visualemente dificil de ler -->
+     <pre>
+         <code>
+        num = int(input)('digite um número '))
+        if num % 2 == 0:
+        print(f' o numero {num} é par )
+    else:
+        print(f' o número {num} é impar)
+    print('fim do programa')
+         </code>
+     </pre> <!-- Essa tag <pre> que vem antes da tag code, serve para ler todos os espaços/ identações 
+         que colocou antes de começar a priemira palavra da linha, é bem utilizada quando vc quer demonstrar
+        algum código por ex esse que eu fiz em cima /\-->
+    <h2> Citações simples </h2>
+    <p>Como diria um pai de amigo:  <q>o computador é um burro muito rápido</q></p>
+<!-- A tag <q> serve para colocar aspas na frase, usado caso queira citar alguma fala de alguém
+    LEMBRANDO: Poderia colocar manualmente a aspas na frase, mas ai estaria mudando somente a forma
+e não o SENTIDO (Semântica), que é sempre recomendado no HMTL -->
+<h2>Citações completa </h2>
+<p><blockquote cite =https://ge.globo.com/  >Segundo Tite, técnico da seleção brasileira, o brasil será campeão do mundo!</blockquote></p>
+<!-- A tag blockquote serve para fazer uma citação com quebra de linha, dando mais importancia para a
+citação dentro do texto, além de também mudar a semântica, 
+TAMBÉM podemos colocar um PARÂMETRO dentro da tag blockquote, que é o <cite>, visualmente ele não muda nada,
+mas é importante pois o mecanismo do google vai saber que a frase dentro da tag esta referenciando 
+o link mencionado no <cite>, assim ajudando na pesquisa etc  -->
+<h2>Citações </h2>
+<p>Estou estudando <abbr title="HyperText Markup language">HTML</abbr> e <abbr title="Cascading Style Sheets ">CSS</abbr> e estou adorando! </p>
+<!-- A tag <abbr> serve para quando vc colocar alguma abreviação no texto, ai vc coloca o significado 
+    completo dentro do 'title' que está dentro da tag abbr, ele irá criar uma pop-up (uma caixinha) 
+que ao passar o mouse em cima dela, aparece o real significado da abreviação -->
+
+
+    
+</body>
+</html>

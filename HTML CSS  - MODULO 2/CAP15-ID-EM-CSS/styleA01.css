@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    background-color: #BF8FB3;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+/* Perceba que qualquer parâmetro para h1, irá alterar todos os h1, e se quisessemos alterar apenas o principal, para isso
+usamos o ID, que serve para identifcar cada H1, basta colocar id=""  e o nome que vc quer que ele fique indentificado*/ 
+h1 {
+    
+    color: #0E1A59; 
+
+}
+h1#principal {
+    text-align: center;
+     /* veja que eu identifiquei o primeiro h1 como principal, depois vim no css externo e coloquei um seletor para alterar apenas o 
+    h1#principal
+     Em HTML é ID = em CSS é #   (apenas um elemento igual para cada documento  HTML)
+     Em HTML é Class = em CSS é . (pode varios elementos)
+    */
+
+    
+}
+h2 {
+    color: #5581D9;
+}
+/*  ------------------------------------------------------ Diferença entre ID E CLASS -----------------------------------------
+     ID é quando queremos alterar apenas um seletor, ou seja, não podemos usar o msm ID em todos os H2. Para isso utilizamos o class, nele conseguimos colocar um seletor para varias 
+     tags, ai sim  podemos alterar varios   H2 com apenas um seletor, veja mais no A01.html 
+
+
+     EDITANDO AS CLASS :
+*/ 
+.basico {
+ color: rgba(3, 138, 70, 0.993)
+ /* Veja que todas as tags que contem a class basico foram alteradas, para selecionar a class no css, basta
+ colocar "." e o nome dela */
+}
+.intermediario {
+    color: rgba(255, 255, 0, 0.644)
+    /* igualmente nas demais : */ 
+}
+.avançado {
+    color: rgba(175, 47, 47, 0.74);
+    
+}
+p {
+    text-align:justify;
+
+}
+.destaque {
+    background-color: rgba(201, 201, 25, 0.596);
+}

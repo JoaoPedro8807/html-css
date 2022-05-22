@@ -1,0 +1,34 @@
+@charset "UTF-8"; /* Regra para não haver incompatibilidade */
+
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+main {
+    background-color: white;
+    color: black;
+    width: 600px; /* Largura em que ficará o background em na tag main */
+    padding: 10px; /* Aqui ele da um espaçamento entre as letras e a margem da background branco, 10px é o suficiente */
+    margin: auto; /* Aqui diz para centralizar toda a tag main, independente do tamanho da tela do navegador.*/
+    border-radius: 20px; /* Serve para arredondar as bordas do fundo (backgroud) branco, MUITO LINDO! */
+    box-shadow: 5px 5px 15px #1b0e09a2; /* Box shadow serve para criar uma sombra entre o backgroud da main e o backgoud da propia pagina,
+    nele, o indicado é que os 3 primeiro parâmtros que são as dimensões sejão os msm que estão no exemplo, que são: 5px, 5px, 15px, e a cor que vc queira,
+    na cor é importante ser um pouco diferente da cor de fundo da propia pagina, igual neste exemplo, em que eu mudei o tom da cor que estava na paleta para um 
+    pouco mais escuro para que faça uma sombra */ 
+}
+body {
+background-image: linear-gradient(to left,#D9C9BA, #BF8069 );
+}
+h1 {
+    color: #733A26;
+    text-align: center;
+    text-shadow: 1px 1px 2px #1b0e09cc; /* Criei uma sombra no H1, como é um texto, os parametros tem q ser menor para que a sombra fique sutil */
+    
+}
+h2 {
+    color: #73664F;
+}
+
+ p {
+     text-align: justify;
+ }

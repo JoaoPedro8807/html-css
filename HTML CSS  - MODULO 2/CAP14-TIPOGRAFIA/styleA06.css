@@ -1,0 +1,25 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+/* Lembre-se que sempre que houver algo com @, ele deve estar fora de um seletor, então coloque ele sempre nas primeiras linhas */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Ms+Madi&family=Nunito&display=swap');
+
+body {
+background-color: antiquewhite;
+font: normal  16px 'Arial', Times, serif;
+}
+h1 {
+font:  italic bolder 3em 'Ms Madi', sans-serif;
+}
+p{      
+    font-family: bolder 16px 'Nunito', sans-serif;
+    
+}
+h2 {
+    font: bolder 2em 'Ms Madi', sans-serif;
+}
+a { font: normal 16px 'Comfortaa', serif;
+
+}

@@ -1,0 +1,100 @@
+html e css são linguagens, mas não de programação
+
+
+
+----------------HTML ---------------------
+* É focado no CONTEÚDO do site. (textos, imagens vídeos, tabelas, etc)
+ 
+----------------- CSS ------------------------
+* É focado em DESIGN (cores, sombras, tamanhos, posicionamentos.)
+
+------------------- JS  -------------------------
+*Interações 
+----------------------------------------------------------------------------------------
+
+
+Conteúdo em HTML:
+     ---------------------  Exemplos de titulos:  ---------------------
+     <h1> 
+     as duas setas <> chamamos de abertura de TAG.  E para fechar basta repitir 
+     a TAG   
+     ex: <h1>PALMEIRAS CAMPEÃO!<h1>
+
+    --------------------Exemplos de parágrafos: ------------------- 
+    ex: 
+    <p>exemplo de paragrafo<p>
+
+    ------------------- Inserir imagem ----------------
+    ex:
+    <img scr="foto.png"
+----------------------------------------------------------------------------------
+
+
+Estilo em CSS:
+
+
+    H1 { 
+        font-family: Arial;
+        font-size: 20pt;
+        color: blue;
+    }
+    > H1 = Chamamos de SELETOR
+    > {}  =  e oq vem dentro do conchete chamamos de DECLARAÇÃO 
+    * TODA DECLARAÇÃO tem ponto e virgula no final (;)
+    > color = chamamos de PROPIEDADE 
+    > blue = chamamos de VALOR 
+   -------------------------------------------------------------------------------
+
+
+Estrutura básica em documento HTML:
+        <!DOCTYPE htlm> = tag para dizer q o documento é HTML5
+        <html lang="ptbr"> = lingua do site
+            <head>
+                <meta charset="UTF-8"> = significa que o site é compativel com assentuaçoes do ptbr 
+                <meta name="viewport"
+                content="width=device-width,initial-scale=1.0"> = sginifica que o site
+                irá ocupar 100% da parte branca e terá uma escala de 100% de zoom
+                <title>Document</title> = titulo do site
+
+            <head> = área de configurações 
+
+            <body>
+            <h1>Olá, mundo!</h1>
+            <body>
+
+
+
+
+
+        
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

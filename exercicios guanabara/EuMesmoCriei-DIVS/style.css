@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+
+:root{               /* A pseudoclasse root é a raiz da arvore do documento, nela tudo que definirmos aqui, vai servir para o documento  INTEIRO */ 
+    --cor0: #232226;
+    --cor1: #4E4C59;
+    --cor2: #73655A;
+    --cor3: #A6998F;
+    --cor4: #0D0000;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+
+}
+
+
+
+body {
+    background-color: var(--cor0);  /* Veja que mudou a cor apenas colocando o nome da variavel, que ja foi declarada no root acima */ 
+    font-family: var(--fonte-destaque);
+}

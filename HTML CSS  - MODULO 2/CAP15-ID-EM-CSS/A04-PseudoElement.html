@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando os links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: red;
+
+
+        }
+        a:hover {
+             text-decoration: underline;
+             color: darkred;
+        }
+        a:active { /* Uma pseudoclasse para quando clicamos no elemento */ 
+            color: yellow;
+        }
+        /* O pseudo elements é para mexermos com o propio conteúdo 
+            Representamos ele com duas vezes os dois pontos (::) o resto é parecido com a pseudo classe        
+
+        Ex */ 
+        a::before { /* Aqui diz que antes de todos os links, */ 
+            content: ' ↦ '; /* Content para quando quisermos adicionar algum conteúdo */
+
+        }
+        a::after { 
+            content: ' ↤ ';
+        }
+        /* podemos também pseudo element em classes ou ID's ex: 
+        Coloquei uma class especial, para diferenciar algum link */
+        .especial::after { /*Veja que pegamos  um pseudo element para colocar depois de toda tag que tiver a class'especial'   */ 
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            content: ' Esse link é especial :) ☑  ';
+            color:rgb(79, 79, 80)
+        }
+        /*    ------------------------------------- RELEMBNRADO SELETORES PERSONALIZADOS  ------------------------------------------------------------------------
+            #  = ID
+            .  = Class
+            :  = Pseudo Class
+            :: = Pseudo Element 
+            >  = clindren (filho) */ 
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <ul type="circle" >
+        <li><a href="https://gustavoguanabara.github.io/" target="_blink" rel="external" class="especial">Repositório github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=23" target="_blink" rel="external">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blink" rel="external ">Site do curso em vídeo</a></li>
+
+    </ul>
+</body>
+</html>

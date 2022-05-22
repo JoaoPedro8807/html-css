@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+ <!-- A palavra User agent  = o própio navegador -->
+ <style>
+     h1  /* box level */ 
+    {
+ /* -------------- IMPORTANCIA DO DEEV TOOLS DO GOOGLE CHROME  --------------------------------- 
+
+ É bem util quando queremos testar o encaixe de algumas caixas, nele da para alterar o tamanho delas e ver em tempo real o resultado,
+ sem precisar ficar mudando toda hora no VSCODING */ 
+
+
+        
+        background-color: aquamarine;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: brown;
+
+        /* Shorthand do border : */ 
+        border: 10px solid brown; /* tem que ser exatamente nessa sequencia */ 
+
+
+
+
+
+        padding-top: 10px;
+        padding-right: 10px;    /* Padding é o espaçamento entre o texto e a borda */ 
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        /* Shorthand do padding */ 
+        padding: 10px; /* Lembre-se que a ordem é horária, primeiro topo-direita-em baixo-esquerda 
+        Como as quatro são iguais (10px) podemos colocar apenas uma vez que irá representar todas */
+
+
+
+
+
+
+        margin-top: 20px;        /* A margem serve para alterar o posicionamento da caixa, caso queira ela um pouco mais para direita ou para a esquerda, lembre-se de usar o dev tolls para pode ajustar melhor */
+        margin-right: 20px;      
+        margin-bottom: 40px;
+        margin-left: 20px;
+
+
+/* Shorthand do margin : */
+        margin: 20px 20px 40px 20px; /* isso é a msm coisa que as quatro linhas de cima */ 
+        /* podemos colocar o auto para centralizar a margem */ 
+        margin: 20px auto 20px auto;
+
+
+
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: blue;
+        /* shorthand da outline  : */ 
+        outline: 5px dash blue ;
+
+
+    }
+    a { /* inline level */ 
+        display: block;  /* podemos alterar o tipo da caixa com o display, veja que o link é um inline level, com o display coloquei ele 
+        como box level (block), isso quer dizer que agora o link  irá quebrar a linha e ocupar o espaço inteiro da pagina, podemos também fazer o contrario, dar um display e colocar um box level no formato in line level (In line box) */ 
+        border-width: 10px;
+        border-color: brown;
+        border-style: solid;
+    
+
+    }      
+
+
+
+ </style>
+</head>
+<body>
+    <h1> Exemplo de caixa box level   </h1>
+    <p>paragráfos também sao exemplos de caixas box leve, mas os <a href="#">links são exemplos de caixas inline level</a>. vejoamos como isso funciona  </p>
+</body>
+</html>
