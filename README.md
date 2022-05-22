@@ -1,0 +1,1 @@
+Repositorio apenas para salvar tudo oq to aprendendo no Curso em vídeo :)
