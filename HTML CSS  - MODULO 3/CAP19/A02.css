@@ -1,0 +1,22 @@
+@charset 'UTF8';
+
+body {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png'); /* podemos também pegar imagens que esteja na internet, mas precisamos ter a certeza
+    que ela não caia do ar, pq se não, não irá carregar no site */
+    
+    background-size: 100px 100px;/* edita o tamanho da imagem que colocamos de fundo*/ 
+
+
+
+    /* É padrão que as imagens se repitam no site, mas podemos personalizar isso com o backrgoud-repeat */ 
+
+    background-repeat: no-repeat; /* aqui ele diz para não repetir, então vai ficar apenas uma imagem, mas como queremos colocar como imagem de fundo, a imagem tem que ser dimensionada para isso*/
+    
+    background-repeat: repeat-x;  /* aqui ele irá repetir a imagem somente no eixo X, ou seja, somente deitado */ 
+
+    background-repeat:  repeat-y; /* aqui ele irá repetir a imagem somente no eixo Y, ou seja, somente em pé */
+
+
+
+
+}
