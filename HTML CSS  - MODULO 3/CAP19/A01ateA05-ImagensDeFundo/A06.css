@@ -2,29 +2,45 @@
 
 body {
     height: 100vh;
+    
     background-color: black;
     background-image: url('imagens/wallpaper002.jpg');
     background-position: center top;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
+
+
     /* mesmo que coloquemos uma imagem de fundo, é importante configurar uma cor de fundo do site, pois o site primeiro carrega o conteúdo e depois as imagens, então 
     pode acontecer da imagem demorar um pouco a carregar */ 
-    background-size: cover;
+
+
+    background-size: cover; 
     /* o backgroud-size aceita diversos tipos de tamanho para a imagem, pode ser em porcentagem, em pixels, o 'contain' que mostrará 100% da imagem, não importa o 
     tamanho da tela do navegador, ele sempre irá se reduzir para mostrar a imagem por inteira. e também temos o 'cover' que irá cobrir o fundo inteiro da view port, é o mais recomendado
     a usar, pois ele não distorce a imagem como o 100%  ou os outros. */
 
+    
+     background-attachment:  fixed;  /* faz com que a imagem fique fixa ao rola a pagina para baixo */ 
 
 
+        /* ShortHand do backrgoud:
+          color > image > position > repeat > [size] > attachment */ 
+
+          /* o cover está entre chaves, pois não está funcionando, então devemos criar uma linha especialmente para declarar ele */ 
+
+          
+    background: rgba(0, 0, 0, 0.548) url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
 
 }   
 
 main {
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border: 1px solid black;
     border-radius: 10px;
+
 
 
 }
