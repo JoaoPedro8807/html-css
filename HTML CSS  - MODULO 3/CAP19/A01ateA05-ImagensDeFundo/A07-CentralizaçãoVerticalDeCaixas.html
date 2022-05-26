@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando caixas na vertical </title>
+</head>
+<!-- A partida de agora, eu vou deixar o style no mesmo arquiv do html -->
+<style>
+    #container {  /* Para centralizar uma imagem verticalmente e horizontalmente, devemos deixar a caixa de fora na posição relativa e a caixa que tem a imagem (conteudo) deixar em position absoluto */ 
+        position: relative;
+
+        height: 500px;
+        background-color: purple;
+        padding: 10px;
+        height: 96vh;
+
+
+       background-image: url('imagens/target001.png');
+        background-size: 100% 100%; 
+    }
+
+    #conteudo {
+        background-image: url('imagens/target001.png');
+        background-size: 100% 100%;
+
+        position: absolute;
+        height: 200px;
+        background-color: yellow;
+        width: 400px;
+        /* se quisessemos centralizar na horizontal usariamos o margin: auto. mas ai nao conseguiriamos centralizar na vertical */ 
+        
+        /* quando trabalhamos em caixas absolutas, podemos usar o left e o top, para mexer no elemento */ 
+        left: 50%;
+        top: 50%; /* veja que a imagem centralizou na div tomando referencial o ponto superior esquerdo da imagem, ou seja, o superior esquerdo ficou enconstado com o centro da div externa,
+        para arrumar isso devemos usar o transfor: translate, para podermos mexer a imagem como quisermos e ai colocar ela 50% para esquerda e 50% para cima */ 
+
+        transform: translate(-50%, -50%); /* No translate valores positivos vão para direita e para baixo, ja os negativos o contrario, vao para a esquerda e para cima */
+
+    }
+
+</style>
+
+<body>
+    <section id="container">    
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
